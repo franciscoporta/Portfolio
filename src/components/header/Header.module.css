@@ -1,0 +1,22 @@
+.containerHeader{
+    position: fixed;
+    background-color: #0c0c14;
+    width: 14%;
+    height: 100vh;
+}
+
+.name{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 6% 10% 0;
+    font-size: 13px;
+    letter-spacing: 6px;
+    color: #fff;
+    width:80%
+}
+
+.img{
+    width:45%;
+    border-radius:100%;
+    margin:22%;
+}
