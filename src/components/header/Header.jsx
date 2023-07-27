@@ -6,7 +6,7 @@ const Header = () => {
 
 
   return (
-    <header className='w-[20%] bg-[#0c0c14] h-screen'>
+    <header className='w-[14%] bg-[#0c0c14] h-screen fixed '>
 
       <div className='m-[20%]'>
         <img src={img_perfil} alt='perfil' className='rounded-full mb-[10%]'/>
@@ -15,7 +15,7 @@ const Header = () => {
 
         <ul className=" p-4 divide-y">
           <li className="p-[6%] ">
-            <a className={style.link} href='#home'>
+            <a className={style.link} href='#inicio'>
               <span className="text-base font-medium text-slate-200 hover:text-slate-500 tracking-widest hover:scale-105 ease-in duration-300">Inicio</span>
             </a>
           </li>    
@@ -24,11 +24,11 @@ const Header = () => {
               <span className="text-base font-medium text-slate-200 hover:text-slate-500 tracking-widest hover:scale-105 ease-in duration-300">Sobre Mi</span>
             </a>
           </li>
-          <li className="p-[6%]">
+          {/* <li className="p-[6%]">
             <a className={style.link} href='#experiencia'>
               <span className=" hover:scale-105 ease-in duration-300text-base font-medium text-slate-200 hover:text-slate-500 tracking-widest" >Experiencia</span>
             </a>
-          </li>
+          </li> */}
           <li className="p-[6%]">
             <a className={style.link} href='#proyectos'>
               <span className="text-base font-medium text-slate-200 hover:text-slate-500 tracking-widest hover:scale-105 ease-in duration-300">Proyectos</span>

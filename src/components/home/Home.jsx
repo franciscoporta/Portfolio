@@ -2,8 +2,7 @@ import React from 'react'
 import AbouteMe from '../abouteme/AbouteMe';
 import Contact from '../contact/Contact';
 import Inicio from '../inicio/Inicio';
-import Portfolio from '../portfolio/Portfolio';
-import Services from '../services/Services';
+import Proyectos from '../portfolio/Proyectos';
 
 
 const Home = () => {
@@ -11,8 +10,7 @@ const Home = () => {
     <div >
         <Inicio/>
         <AbouteMe/>
-        <Services/>
-        <Portfolio/>
+        <Proyectos/>
         <Contact/>
     </div>
   )
