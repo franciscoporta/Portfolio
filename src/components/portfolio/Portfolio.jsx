@@ -2,7 +2,9 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <section id='experiencia' className='h-screen bg-[#10101a]'>
+      Experiencia
+    </section>
   )
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
-import style from './AbouteMe.module.css'
 
 const AbouteMe = () => {
   return (
-    <div className={style.containerAboute}>Francisco Porta</div>
+    <section id='sobremi' className='h-screen bg-[#10101a]'>
+      Sobre mi
+    </section>
   )
 }
 

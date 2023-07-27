@@ -1,22 +1,43 @@
-.containerHeader{
+/* .containerHeader{
     position: fixed;
     background-color: #0c0c14;
     width: 14%;
     height: 100vh;
 }
 
+.containerImg{
+    margin:20%
+}
+
 .name{
+    width:100%;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 6% 10% 0;
     font-size: 13px;
     letter-spacing: 6px;
     color: #fff;
-    width:80%
 }
 
 .img{
-    width:45%;
+    width:80%;
     border-radius:100%;
-    margin:22%;
 }
+
+.link{
+    margin: 0;
+    padding: 15px 30px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 18px;
+  }
+
+.texto{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  } */
+

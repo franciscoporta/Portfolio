@@ -2,7 +2,9 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <section id='proyectos' className='h-screen bg-[#10101a]'>
+      Proyectos
+    </section>
   )
 }
 
