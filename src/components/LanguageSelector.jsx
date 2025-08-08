@@ -9,19 +9,18 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className="language-selector">
-      <button
-        onClick={() => changeLanguage("es")}
-        className={`lang-btn ${i18n.language === "es" ? "active" : ""}`}
+    <div className="language-switch" data-lang={i18n.language}>
+      <div
+        className="switch-container"
+        onClick={() => changeLanguage(i18n.language === "es" ? "en" : "es")}
       >
-        🇪🇸 ES
-      </button>
-      <button
-        onClick={() => changeLanguage("en")}
-        className={`lang-btn ${i18n.language === "en" ? "active" : ""}`}
-      >
-        🇺🇸 EN
-      </button>
+        <div className="switch-track">
+          <span className="switch-text">
+            {i18n.language === "es" ? "ES" : "EN"}
+          </span>
+        </div>
+        <div className="switch-thumb"></div>
+      </div>
     </div>
   );
 };
