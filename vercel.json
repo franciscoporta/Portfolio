@@ -1,15 +1,5 @@
 {
-  "buildCommand": "chmod +x vercel-build.sh && ./vercel-build.sh",
+  "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "framework": "create-react-app",
-  "functions": {
-    "app/api/**/*.js": {
-      "runtime": "nodejs22.x"
-    }
-  },
-  "build": {
-    "env": {
-      "NODE_VERSION": "22.18.0"
-    }
-  }
+  "framework": "create-react-app"
 } 
