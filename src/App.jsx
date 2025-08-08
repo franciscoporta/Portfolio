@@ -1,11 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./App.css";
+import "./i18n";
 import earthAmbiental from "./assets/earth.png";
 import profile from "./assets/perfil.jpg";
+import LanguageSelector from "./components/LanguageSelector";
 
 function App() {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,9 +42,8 @@ function App() {
 
   const projects = [
     {
-      title: "Earth Ambiental",
-      description:
-        "Plataforma completa de comercio electrónico con React, Next.js y Stripe",
+      title: t("projects.earthAmbiental.title"),
+      description: t("projects.earthAmbiental.description"),
       image: earthAmbiental,
       tags: ["React", "Next.js", "Stripe", "CSS"],
       demo: "https://www.earthambiental.com/",
@@ -55,75 +58,72 @@ function App() {
 
   const skills = [
     {
-      name: "React & React Native",
-      description: "Desarrollo frontend y móvil moderno",
+      name: t("skills.react.name"),
+      description: t("skills.react.description"),
       icon: "⚛️",
       color: "orange-red",
     },
     {
-      name: "JavaScript & TypeScript",
-      description: "Código robusto y tipado",
+      name: t("skills.javascript.name"),
+      description: t("skills.javascript.description"),
       icon: "📘",
       color: "pink-purple",
     },
     {
-      name: "Node.js & Backend",
-      description: "APIs y servicios escalables",
+      name: t("skills.nodejs.name"),
+      description: t("skills.nodejs.description"),
       icon: "🚀",
       color: "yellow-orange",
     },
     {
-      name: "MongoDB & Firebase",
-      description: "Bases de datos modernas",
+      name: t("skills.database.name"),
+      description: t("skills.database.description"),
       icon: "🗄️",
       color: "green-teal",
     },
     {
-      name: "Git & Cypress",
-      description: "Control de versiones y testing",
+      name: t("skills.tools.name"),
+      description: t("skills.tools.description"),
       icon: "🔧",
       color: "blue-indigo",
     },
     {
-      name: "Trabajo en Equipo",
-      description: "Comunicación y colaboración",
+      name: t("skills.teamwork.name"),
+      description: t("skills.teamwork.description"),
       icon: "🤝",
       color: "purple-pink",
     },
   ];
 
   const navigationItems = [
-    { id: "hero", label: "Inicio", icon: "🏠" },
-    { id: "about", label: "Sobre mí", icon: "👨‍💻" },
-    { id: "skills", label: "Skills", icon: "⚡" },
-    { id: "projects", label: "Proyectos", icon: "🚀" },
+    { id: "hero", label: t("navigation.home"), icon: "🏠" },
+    { id: "about", label: t("navigation.about"), icon: "👨‍💻" },
+    { id: "skills", label: t("navigation.skills"), icon: "⚡" },
+    { id: "projects", label: t("navigation.projects"), icon: "🚀" },
   ];
 
   const heroTags = [
-    "✨ Innovador",
-    "🚀 Rápido",
-    "🎨 Creativo",
-    "💡 Solucionador",
+    t("hero.tags.innovative"),
+    t("hero.tags.fast"),
+    t("hero.tags.creative"),
+    t("hero.tags.problemSolver"),
   ];
 
   const values = [
     {
       icon: "🤝",
-      title: "Comunicación Clara",
-      description:
-        "Me apasionan las nuevas relaciones y la comunicación transparente. Creo en el poder del intercambio diario en equipos de trabajo.",
+      title: t("about.values.communication.title"),
+      description: t("about.values.communication.description"),
     },
     {
       icon: "💻",
-      title: "Calidad del Código",
-      description:
-        "Comprometido con la calidad del código y la escalabilidad a largo plazo de las aplicaciones. Cada detalle importa.",
+      title: t("about.values.codeQuality.title"),
+      description: t("about.values.codeQuality.description"),
     },
     {
       icon: "🚀",
-      title: "Crecimiento Constante",
-      description:
-        "Soy muy extrovertido y valoro las críticas constructivas. Siempre abierto a nuevos desafíos para seguir creciendo profesionalmente.",
+      title: t("about.values.growth.title"),
+      description: t("about.values.growth.description"),
     },
   ];
 
@@ -171,6 +171,7 @@ function App() {
                   {section.label}
                 </button>
               ))}
+              <LanguageSelector />
             </div>
 
             <button
@@ -205,6 +206,14 @@ function App() {
           <div className="hero-bg-3"></div>
         </div>
 
+        <div className="hero-bubbles">
+          <div className="bubble bubble-1"></div>
+          <div className="bubble bubble-2"></div>
+          <div className="bubble bubble-3"></div>
+          <div className="bubble bubble-4"></div>
+          <div className="bubble bubble-5"></div>
+        </div>
+
         <div className="hero-container">
           <div className={`hero-content ${isVisible ? "visible" : ""}`}>
             <div className="avatar-container">
@@ -216,17 +225,12 @@ function App() {
 
             <div className="hero-title">
               <h1 className="main-title">
-                <span className="gradient-text">Creativo</span>
+                <span className="gradient-text">{t("hero.creative")}</span>
               </h1>
-              <h2 className="subtitle">Digital Developer</h2>
+              <h2 className="subtitle">{t("hero.subtitle")}</h2>
             </div>
 
-            <p className="hero-description">
-              Desarrollador Full Stack orientado al Front End con más de 2 años
-              de experiencia. Especializado en React, Node.js y tecnologías
-              modernas. Comprometido con la calidad del código y el trabajo en
-              equipo.
-            </p>
+            <p className="hero-description">{t("hero.description")}</p>
 
             <div className="hero-tags">
               {heroTags.map((tag, index) => (
@@ -243,11 +247,11 @@ function App() {
             <div className="hero-buttons">
               <button className="btn-primary" onClick={handleContactEmail}>
                 <span>📧</span>
-                Hablemos
+                {t("hero.buttons.letsTalk")}
               </button>
               <button className="btn-secondary" onClick={handleDownloadCV}>
                 <span>📄</span>
-                Mi CV
+                {t("hero.buttons.myCV")}
               </button>
             </div>
 
@@ -302,25 +306,6 @@ function App() {
               </button>
             </div>
           </div>
-
-          <div className="scroll-indicator">
-            <div className="scroll-arrow">
-              <svg
-                width="24"
-                height="24"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -331,15 +316,19 @@ function App() {
           <div className="about-bg-2"></div>
         </div>
 
+        <div className="about-bubbles">
+          <div className="bubble bubble-1"></div>
+          <div className="bubble bubble-2"></div>
+          <div className="bubble bubble-3"></div>
+          <div className="bubble bubble-4"></div>
+        </div>
+
         <div className="about-container">
           <div className="section-header">
             <h2 className="section-title">
-              <span className="gradient-text">Mi Historia</span>
+              <span className="gradient-text">{t("about.title")}</span>
             </h2>
-            <p className="section-description">
-              Más que código, creo experiencias que transforman ideas en
-              realidad digital
-            </p>
+            <p className="section-description">{t("about.subtitle")}</p>
           </div>
 
           <div className="about-content">
@@ -348,41 +337,24 @@ function App() {
                 <div className="card-icon orange-pink">
                   <span>🎯</span>
                 </div>
-                <h3>Mi Misión</h3>
-                <p>
-                  Como desarrollador Full Stack orientado al Front End, me
-                  comprometo con la calidad del código y la escalabilidad a
-                  largo plazo de las aplicaciones. Cada línea que escribo tiene
-                  un propósito: crear experiencias digitales que realmente
-                  importen y perduren.
-                </p>
+                <h3>{t("about.mission.title")}</h3>
+                <p>{t("about.mission.description")}</p>
               </div>
 
               <div className="about-card">
                 <div className="card-icon yellow-orange">
                   <span>⚡</span>
                 </div>
-                <h3>Mi Enfoque</h3>
-                <p>
-                  Me considero una persona muy social, apasionado por las nuevas
-                  relaciones y la comunicación clara. Disfruto del intercambio
-                  diario en equipos de trabajo, tanto profesional como
-                  humanamente. Valoro mucho las críticas constructivas para
-                  seguir creciendo.
-                </p>
+                <h3>{t("about.approach.title")}</h3>
+                <p>{t("about.approach.description")}</p>
               </div>
 
               <div className="about-card">
                 <div className="card-icon pink-purple">
                   <span>🚀</span>
                 </div>
-                <h3>Mi Pasión</h3>
-                <p>
-                  Soy muy extrovertido y estoy abierto a nuevos desafíos en
-                  busca de un crecimiento constante. Mi formación incluye más de
-                  700 horas de práctica en el Bootcamp de Henry,
-                  especializándome en React.js, Node.js y tecnologías modernas.
-                </p>
+                <h3>{t("about.passion.title")}</h3>
+                <p>{t("about.passion.description")}</p>
               </div>
             </div>
 
@@ -402,7 +374,7 @@ function App() {
 
               <div className="stat-card stat-1">
                 <div className="stat-number gradient-text">3+</div>
-                <div className="stat-label">Años</div>
+                <div className="stat-label">{t("about.stats.years")}</div>
               </div>
 
               {/* <div className="stat-card stat-2">
@@ -412,11 +384,7 @@ function App() {
 
               <div className="stat-card stat-3">
                 <div className="stat-icon">💻</div>
-                <div className="stat-label">
-                  Full Stack
-                  <br />
-                  Developer
-                </div>
+                <div className="stat-label">{t("about.stats.fullStack")}</div>
               </div>
 
               <div className="decorative-dot dot-1"></div>
@@ -426,7 +394,7 @@ function App() {
 
           <div className="values-section">
             <h3 className="values-title">
-              <span className="gradient-text">Mis Valores</span>
+              <span className="gradient-text">{t("about.values.title")}</span>
             </h3>
 
             <div className="values-grid">
@@ -446,12 +414,18 @@ function App() {
 
       {/* Skills Section */}
       <section id="skills" className="skills-section">
+        <div className="skills-bubbles">
+          <div className="bubble bubble-1"></div>
+          <div className="bubble bubble-2"></div>
+          <div className="bubble bubble-3"></div>
+          <div className="bubble bubble-4"></div>
+          <div className="bubble bubble-5"></div>
+        </div>
+
         <div className="skills-container">
           <div className="section-header">
-            <h2 className="section-title">Mi Arsenal Creativo</h2>
-            <p className="section-description">
-              Las herramientas que uso para crear magia digital
-            </p>
+            <h2 className="section-title">{t("skills.title")}</h2>
+            <p className="section-description">{t("skills.subtitle")}</p>
           </div>
 
           <div className="skills-grid">
@@ -475,15 +449,20 @@ function App() {
           <div className="projects-bg-2"></div>
         </div>
 
+        <div className="projects-bubbles">
+          <div className="bubble bubble-1"></div>
+          <div className="bubble bubble-2"></div>
+          <div className="bubble bubble-3"></div>
+          <div className="bubble bubble-4"></div>
+          <div className="bubble bubble-5"></div>
+        </div>
+
         <div className="projects-container">
           <div className="section-header">
             <h2 className="section-title">
-              <span className="gradient-text">Mis Creaciones</span>
+              <span className="gradient-text">{t("projects.title")}</span>
             </h2>
-            <p className="section-description">
-              Cada proyecto es una historia única de creatividad, código y
-              pasión
-            </p>
+            <p className="section-description">{t("projects.subtitle")}</p>
           </div>
 
           <div className="projects-grid">
@@ -493,7 +472,7 @@ function App() {
                 className={`project-card ${index % 2 === 0 ? "offset" : ""}`}
               >
                 {project.featured && (
-                  <div className="featured-badge">⭐ Destacado</div>
+                  <div className="featured-badge">{t("projects.featured")}</div>
                 )}
 
                 <div className="project-image">
@@ -595,17 +574,12 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="contact-section">
         <div className="contact-container">
-          <h2 className="section-title">¡Trabajemos juntos!</h2>
-          <p className="section-description">
-            ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él
-          </p>
+          <h2 className="section-title">{t("contact.title")}</h2>
+          <p className="section-description">{t("contact.subtitle")}</p>
 
           <div className="contact-card">
-            <h3>¿Listo para empezar?</h3>
-            <p>
-              Estoy disponible para proyectos freelance y oportunidades de
-              trabajo remoto
-            </p>
+            <h3>{t("contact.ready")}</h3>
+            <p>{t("contact.description")}</p>
             <div className="contact-buttons">
               <button
                 className="contact-btn primary"
@@ -628,7 +602,7 @@ function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2024 Francisco Developer. Hecho con ❤️ y mucho café</p>
+        <p>{t("footer.copyright")}</p>
       </footer>
     </div>
   );

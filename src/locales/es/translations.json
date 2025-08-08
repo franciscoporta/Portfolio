@@ -1,0 +1,104 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Skills",
+    "projects": "Proyectos"
+  },
+  "hero": {
+    "creative": "Creativo",
+    "subtitle": "Digital Developer",
+    "description": "Desarrollador Full Stack orientado al Front End con más de 2 años de experiencia. Especializado en React, Node.js y tecnologías modernas. Comprometido con la calidad del código y el trabajo en equipo.",
+    "tags": {
+      "innovative": "✨ Innovador",
+      "fast": "🚀 Rápido",
+      "creative": "🎨 Creativo",
+      "problemSolver": "💡 Solucionador"
+    },
+    "buttons": {
+      "letsTalk": "Hablemos",
+      "myCV": "Mi CV"
+    }
+  },
+  "about": {
+    "title": "Mi Historia",
+    "subtitle": "Más que código, creo experiencias que transforman ideas en realidad digital",
+    "mission": {
+      "title": "Mi Misión",
+      "description": "Como desarrollador Full Stack orientado al Front End, me comprometo con la calidad del código y la escalabilidad a largo plazo de las aplicaciones. Cada línea que escribo tiene un propósito: crear experiencias digitales que realmente importen y perduren."
+    },
+    "approach": {
+      "title": "Mi Enfoque",
+      "description": "Me considero una persona muy social, apasionado por las nuevas relaciones y la comunicación clara. Disfruto del intercambio diario en equipos de trabajo, tanto profesional como humanamente. Valoro mucho las críticas constructivas para seguir creciendo."
+    },
+    "passion": {
+      "title": "Mi Pasión",
+      "description": "Soy muy extrovertido y estoy abierto a nuevos desafíos en busca de un crecimiento constante. Mi formación incluye más de 700 horas de práctica en el Bootcamp de Henry, especializándome en React.js, Node.js y tecnologías modernas."
+    },
+    "stats": {
+      "years": "Años",
+      "fullStack": "Full Stack Developer"
+    },
+    "values": {
+      "title": "Mis Valores",
+      "communication": {
+        "title": "Comunicación Clara",
+        "description": "Me apasionan las nuevas relaciones y la comunicación transparente. Creo en el poder del intercambio diario en equipos de trabajo."
+      },
+      "codeQuality": {
+        "title": "Calidad del Código",
+        "description": "Comprometido con la calidad del código y la escalabilidad a largo plazo de las aplicaciones. Cada detalle importa."
+      },
+      "growth": {
+        "title": "Crecimiento Constante",
+        "description": "Soy muy extrovertido y valoro las críticas constructivas. Siempre abierto a nuevos desafíos para seguir creciendo profesionalmente."
+      }
+    }
+  },
+  "skills": {
+    "title": "Mi Arsenal Creativo",
+    "subtitle": "Las herramientas que uso para crear magia digital",
+    "react": {
+      "name": "React & React Native",
+      "description": "Desarrollo frontend y móvil moderno"
+    },
+    "javascript": {
+      "name": "JavaScript & TypeScript",
+      "description": "Código robusto y tipado"
+    },
+    "nodejs": {
+      "name": "Node.js & Backend",
+      "description": "APIs y servicios escalables"
+    },
+    "database": {
+      "name": "MongoDB & Firebase",
+      "description": "Bases de datos modernas"
+    },
+    "tools": {
+      "name": "Git & Cypress",
+      "description": "Control de versiones y testing"
+    },
+    "teamwork": {
+      "name": "Trabajo en Equipo",
+      "description": "Comunicación y colaboración"
+    }
+  },
+  "projects": {
+    "title": "Mis Creaciones",
+    "subtitle": "Cada proyecto es una historia única de creatividad, código y pasión",
+    "featured": "⭐ Destacado",
+    "earthAmbiental": {
+      "title": "Earth Ambiental",
+      "description": "Plataforma completa de comercio electrónico con React, Next.js y Stripe"
+    }
+  },
+  "contact": {
+    "title": "¡Trabajemos juntos!",
+    "subtitle": "¿Tienes un proyecto en mente? Me encantaría escuchar sobre él",
+    "ready": "¿Listo para empezar?",
+    "description": "Estoy disponible para proyectos freelance y oportunidades de trabajo remoto"
+  },
+  "footer": {
+    "copyright": "© 2024 Francisco Developer. Hecho con ❤️ y mucho café"
+  }
+} 

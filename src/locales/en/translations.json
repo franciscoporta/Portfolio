@@ -1,0 +1,104 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "hero": {
+    "creative": "Creative",
+    "subtitle": "Digital Developer",
+    "description": "Full Stack Developer focused on Front End with more than 2 years of experience. Specialized in React, Node.js and modern technologies. Committed to code quality and teamwork.",
+    "tags": {
+      "innovative": "✨ Innovative",
+      "fast": "🚀 Fast",
+      "creative": "🎨 Creative",
+      "problemSolver": "💡 Problem Solver"
+    },
+    "buttons": {
+      "letsTalk": "Let's Talk",
+      "myCV": "My CV"
+    }
+  },
+  "about": {
+    "title": "My Story",
+    "subtitle": "More than code, I create experiences that transform ideas into digital reality",
+    "mission": {
+      "title": "My Mission",
+      "description": "As a Full Stack Developer focused on Front End, I am committed to code quality and long-term scalability of applications. Every line I write has a purpose: to create digital experiences that truly matter and endure."
+    },
+    "approach": {
+      "title": "My Approach",
+      "description": "I consider myself a very social person, passionate about new relationships and clear communication. I enjoy daily interaction in work teams, both professionally and humanly. I value constructive criticism to keep growing."
+    },
+    "passion": {
+      "title": "My Passion",
+      "description": "I am very extroverted and open to new challenges in search of constant growth. My training includes more than 700 hours of practice at Henry's Bootcamp, specializing in React.js, Node.js and modern technologies."
+    },
+    "stats": {
+      "years": "Years",
+      "fullStack": "Full Stack Developer"
+    },
+    "values": {
+      "title": "My Values",
+      "communication": {
+        "title": "Clear Communication",
+        "description": "I am passionate about new relationships and transparent communication. I believe in the power of daily exchange in work teams."
+      },
+      "codeQuality": {
+        "title": "Code Quality",
+        "description": "Committed to code quality and long-term scalability of applications. Every detail matters."
+      },
+      "growth": {
+        "title": "Constant Growth",
+        "description": "I am very extroverted and value constructive criticism. Always open to new challenges to keep growing professionally."
+      }
+    }
+  },
+  "skills": {
+    "title": "My Creative Arsenal",
+    "subtitle": "The tools I use to create digital magic",
+    "react": {
+      "name": "React & React Native",
+      "description": "Modern frontend and mobile development"
+    },
+    "javascript": {
+      "name": "JavaScript & TypeScript",
+      "description": "Robust and typed code"
+    },
+    "nodejs": {
+      "name": "Node.js & Backend",
+      "description": "Scalable APIs and services"
+    },
+    "database": {
+      "name": "MongoDB & Firebase",
+      "description": "Modern databases"
+    },
+    "tools": {
+      "name": "Git & Cypress",
+      "description": "Version control and testing"
+    },
+    "teamwork": {
+      "name": "Teamwork",
+      "description": "Communication and collaboration"
+    }
+  },
+  "projects": {
+    "title": "My Creations",
+    "subtitle": "Each project is a unique story of creativity, code and passion",
+    "featured": "⭐ Featured",
+    "earthAmbiental": {
+      "title": "Earth Ambiental",
+      "description": "Complete e-commerce platform with React, Next.js and Stripe"
+    }
+  },
+  "contact": {
+    "title": "Let's work together!",
+    "subtitle": "Do you have a project in mind? I'd love to hear about it",
+    "ready": "Ready to start?",
+    "description": "I'm available for freelance projects and remote work opportunities"
+  },
+  "footer": {
+    "copyright": "© 2024 Francisco Developer. Made with ❤️ and lots of coffee"
+  }
+} 
